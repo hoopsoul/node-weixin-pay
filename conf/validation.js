@@ -384,8 +384,7 @@ module.exports = {
         },
         refund_id: {
           type: 'string',
-          maxLength: 28,
-          required: true
+          maxLength: 28
         }
       },
       receiving: {
