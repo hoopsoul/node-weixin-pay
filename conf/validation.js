@@ -64,10 +64,10 @@ module.exports = {
         maxLength: 32,
         required: true
       },
-      // total_fee: {
-      //   type: 'int',
-      //   required: true
-      // },
+      total_fee: {
+        type: 'int',
+        required: true
+      },
       spbill_create_ip: {
         type: 'string',
         maxLength: 16,
@@ -144,13 +144,13 @@ module.exports = {
       maxLength: 16,
       required: true
     },
-    // total_fee: {
-    //   type: 'int',
-    //   required: true
-    // },
-    // coupon_fee: {
-    //   type: 'int'
-    // },
+    total_fee: {
+      type: 'int',
+      required: true
+    },
+    coupon_fee: {
+      type: 'int'
+    },
     fee_type: {
       type: 'string',
       maxLength: 8
@@ -232,13 +232,13 @@ module.exports = {
         maxLength: 16,
         required: true
       },
-      // total_fee: {
-      //   type: 'int',
-      //   required: true
-      // },
-      // coupon_fee: {
-      //   type: 'int',
-      // },
+      total_fee: {
+        type: 'int',
+        required: true
+      },
+      coupon_fee: {
+        type: 'int',
+      },
       fee_type: {
         type: 'string',
         maxLength: 8,
@@ -298,14 +298,14 @@ module.exports = {
           maxLength: 28,
           required: true
         },
-        // total_fee: {
-        //   type: 'int',
-        //   required: true
-        // },
-        // refund_fee: {
-        //   type: 'int',
-        //   required: true
-        // },
+        total_fee: {
+          type: 'int',
+          required: true
+        },
+        refund_fee: {
+          type: 'int',
+          required: true
+        },
         op_user_id: {
           type: 'string',
           maxLength: 32,
@@ -337,13 +337,13 @@ module.exports = {
           type: 'string',
           maxLength: 16
         },
-        // refund_fee: {
-        //   type: 'int',
-        //   required: true
-        // },
-        // coupon_refund_fee: {
-        //   type: 'int'
-        // }
+        refund_fee: {
+          type: 'int',
+          required: true
+        },
+        coupon_refund_fee: {
+          type: 'int'
+        }
       }
     },
     query: {
@@ -398,9 +398,9 @@ module.exports = {
           maxLength: 32,
           required: true
         },
-        // refund_count: {
-        //   type: 'int'
-        // }
+        refund_count: {
+          type: 'int'
+        }
       }
     }
   },
