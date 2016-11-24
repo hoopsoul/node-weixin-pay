@@ -114,8 +114,8 @@ var pay = {
   sign: function (merchant, params) {
     var temp = util.marshall(params);
     temp += '&key=' + String(merchant.key);
-    temp = new buffer.Buffer(temp);
-    temp = temp.toString("binary");
+    // temp = new buffer.Buffer(temp);
+    // temp = temp.toString("binary");
     var crypt = crypto.createHash('MD5');
     crypt.update(temp);
     return crypt.digest('hex').toUpperCase();
@@ -176,4 +176,3 @@ var pay = {
 };
 
 module.exports = pay;
-
